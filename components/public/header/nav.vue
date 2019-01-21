@@ -6,7 +6,8 @@
         @mouseleave="closemy">
         <nuxt-link to="/">我的美团</nuxt-link>
         <dl 
-          v-show="showmy">
+          v-show="showmy"
+          class="my">
           <dd><nuxt-link to="/dingdan">我的订单</nuxt-link></dd>
           <dd>我的收藏</dd>
           <dd>抵用券</dd>
@@ -131,6 +132,17 @@ export default {
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
   box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.my {
+  width: 80px;
+  position: absolute;
+  border: 1px solid #e5e5e5;
+  border-top: 1px solid transparent;
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.1);
+  top: 40px;
+  left: -2px;
+  z-index: 100;
+  background-color: #fff;
 }
 .shopcenter {
   width: 100px;
