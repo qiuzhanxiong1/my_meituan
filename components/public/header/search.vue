@@ -2,7 +2,7 @@
   <div>
     <el-row class="search">
       <el-col :span="24">
-        <div class="search-line">
+        <div class="search-line clearfloat">
           <el-input
             v-model="searchtext"
             placeholder="搜索商家或地点"
@@ -97,6 +97,7 @@ export default {
 .search-input {
   float: left;
   width: 550px;
+  position: relative;
 }
 .search-line >>> .el-input__inner {
   border-color: #13d1be;
@@ -110,7 +111,6 @@ export default {
   left: 470px;
   width: 81px;
   height: 41px;
-  float: left;
   background-color: #13d1be;
   border: 1px solid #13d1be;
 }

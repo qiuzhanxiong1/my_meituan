@@ -1,6 +1,8 @@
 <template>
   <el-container class="container">
-    <el-header class="header">
+    <el-header 
+      class="header" 
+      height="197px">
       <my-header/>
     </el-header>
     <el-main>
@@ -17,8 +19,11 @@ export default {
 }
 </script>
 
-
-<style>
+<style scoped>
+.container >>> .el-main {
+  padding: 0;
+  overflow: inherit;
+}
 .container {
   text-align: center;
 }

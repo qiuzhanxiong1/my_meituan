@@ -30,7 +30,7 @@ export default {
 </script>
 <style scoped>
 .header-index {
-  width: 100;
+  width: 100%;
 }
 .top-header {
   width: 100%;

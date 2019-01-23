@@ -1,6 +1,6 @@
 <template>
   <div class="header-nav">
-    <ul>
+    <ul class="clearfloat">
       <li 
         @mouseover="openmy" 
         @mouseleave="closemy">
@@ -19,7 +19,7 @@
         @mouseover="openshop" 
         @mouseleave="closeshop">
         <nuxt-link to="/">商家中心</nuxt-link>
-        <dl 
+        <dl
           v-show="showshop"
           class="shopcenter">
           <dd><nuxt-link to="/">登陆商家中心</nuxt-link></dd>
@@ -34,25 +34,25 @@
         <span>网站导航</span>
         <div 
           v-show="showbanner"
-          class="banner">
-          <dl class="hotel">
+          class="banner clearfloat">
+          <dl class="hotel clearfloat">
             <dt>酒店旅游</dt>
             <dd>国际机票</dd>
             <dd>国际机票</dd>
             <dd>国际机票</dd>
             <dd>国际机票</dd>
           </dl>
-          <dl class="food">
+          <dl class="food clearfloat">
             <dt>吃美食</dt>
             <dd>烤鱼</dd>
             <dd>烤鱼</dd>
             <dd>烤鱼</dd>
           </dl>
-          <dl class="movie">
+          <dl class="movie clearfloat">
             <dt>看电影</dt>
             <dd>热映电影</dd>
           </dl>
-          <dl class="app">
+          <dl class="app clearfloat">
             <dt>手机应用</dt>
             <dd>
               <img src="http://s0.meituan.net/bs/fe-web-meituan/e5eeaef/img/appicons/meituan.png" >
@@ -120,18 +120,12 @@ export default {
   z-index: 1;
 }
 .header-nav ul li:nth-child(1):hover,
+.header-nav ul li:nth-child(3):hover,
 .header-nav ul li:nth-child(4):hover {
   background-color: #fff;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
-}
-.header-nav ul li:nth-child(3):hover {
-  background-color: #fff;
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .my {
   width: 80px;
@@ -152,7 +146,8 @@ export default {
   position: absolute;
   left: -22px;
   top: 40px;
-  z-index: 1000;
+  z-index: 100;
+  background-color: #fff;
 }
 .banner {
   width: 1200px;

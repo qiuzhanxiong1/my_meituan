@@ -25,7 +25,6 @@ export default {
 <style scoped>
 .header-search {
   width: 100%;
-  height: 160px;
   background-color: #fff;
 }
 .search-content {

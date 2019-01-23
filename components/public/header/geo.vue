@@ -1,5 +1,5 @@
 <template>
-  <div class="m-geo">
+  <div class="m-geo clearfloat">
     <i class="el-icon-location"/>
     <div>嘉兴</div>
     <nuxt-link to="/">切换城市</nuxt-link>
@@ -12,7 +12,7 @@ export default {}
 <style scoped>
 .m-geo i,
 .m-geo div,
-.m-geo inuxt-link {
+.m-geo nuxt-link {
   float: left;
 }
 i {

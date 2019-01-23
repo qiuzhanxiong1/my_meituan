@@ -2,9 +2,15 @@
   <el-row 
     :gutter="0" 
     class="topbar">
-    <el-col :span="4"><header-geo/></el-col>
+    <el-col :span="4">
+      <header-geo/>
+    </el-col>
     <el-col :span="3"><header-user/></el-col>
-    <el-col :span="17"><header-nav/></el-col>
+    <el-col 
+      :span="17"
+      class="clearfloat">
+      <header-nav/>
+    </el-col>
   </el-row>
 </template>
 <script>

@@ -1,65 +1,44 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        meituan
-      </h1>
-      <h2 class="subtitle">
-        My tiptop Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div class="index">
+    <el-row 
+      :gutter="0" 
+      class="index-row">
+      <el-col :span="5">
+        <menu-nav/>
+      </el-col>
+      <el-col :span="19">
+        <menu-list/>
+      </el-col>
+    </el-row>
+    <el-row :gutter="0">
+      <el-col :span="24">
+        <menu-detail/>
+      </el-col>
+    </el-row>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import menuNav from '../components/index/menunav'
+import menuList from '../components/index/menulist'
+import menuDetail from '../components/index/menudetail'
 export default {
   components: {
-    Logo
+    menuNav,
+    menuList,
+    menuDetail
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+.index {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 0px;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.index-row {
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>
