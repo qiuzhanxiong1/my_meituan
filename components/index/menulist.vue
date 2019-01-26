@@ -28,12 +28,12 @@
         <div class="login">
           <div class="login-img">1</div>
           <div class="login-title">Hi！你好</div>
-          <div >
+          <div>
             <el-button
               round
               class="login-btn">注册</el-button>
           </div>
-          <div >
+          <div>
             <el-button
               round
               class="login-btn">立即登陆</el-button>
